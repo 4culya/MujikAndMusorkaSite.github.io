@@ -6,7 +6,7 @@
   <title>Mujik And Musorka</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <style>
-	 * {
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -30,11 +30,10 @@
     .content {
       padding: 40px;
       max-width: 700px;
-      margin: 0 auto;
+      margin: 100px auto 0 auto;
       text-align: center;
       background: rgba(0,0,0,0.5);
       border-radius: 15px;
-      margin-top: 100px;
     }
 
     .description {
@@ -56,22 +55,6 @@
 
     .download-latest:hover {
       background: #218838;
-    }
-
-    .version-btn {
-      margin-top: 20px;
-      display: inline-block;
-      background: #007bff;
-      color: white;
-      padding: 10px 25px;
-      font-size: 18px;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .version-btn:hover {
-      background: #0056b3;
     }
 
     .language-selector {
@@ -151,47 +134,6 @@
       color: black;
     }
 
-    .modal {
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.8);
-      backdrop-filter: blur(8px);
-      display: none;
-      justify-content: center;
-      align-items: center;
-      z-index: 999;
-    }
-
-    .modal-content {
-      background: #222;
-      padding: 30px;
-      border-radius: 20px;
-      text-align: center;
-    }
-
-    .modal-content a {
-      display: block;
-      margin: 10px 0;
-      color: white;
-      text-decoration: none;
-      font-size: 20px;
-    }
-
-    .modal-content a:hover {
-      color: #0af;
-    }
-
-    .close-modal {
-      margin-top: 20px;
-      padding: 5px 15px;
-      background: #ff4444;
-      color: white;
-      border-radius: 8px;
-      cursor: pointer;
-      border: none;
-      font-size: 16px;
-    }
-
     .trailer-container {
       margin-top: 30px;
       border-radius: 15px;
@@ -228,117 +170,89 @@
     <p class="description" data-key="description">
       Mujik And Musorka is a wild arcade game about chaos, fun, and unexpected adventures.
     </p>
-    <a href="files/mujik and musorka ver. alpha_025.rar" class="download-latest" data-key="download_latest" target="_blank" rel="noopener noreferrer">Download Latest</a>
-    <div class="version-btn" id="versionBtn" data-key="choose_version">Choose Game Version</div>
+    <a href="https://4culya.itch.io/mujik-and-musorka" class="download-latest" data-key="download_latest" target="_blank" rel="noopener noreferrer">Download Latest</a>
 
     <div class="trailer-container">
-	<iframe src="https://www.youtube.com/embed/uo01y_qB4pc" allowfullscreen></iframe>
-</div>
+      <iframe src="https://www.youtube.com/embed/uo01y_qB4pc" allowfullscreen></iframe>
+    </div>
 
-<div class="thanks-list" id="thanksList">
-  <h2 data-key="thanks_title" style="margin-top:40px;">Thanks to</h2>
-  </div>
-  <div class="thanks-item">
-    <span>Awota</span>
-    <div class="social-links">
-      <a href="https://www.tiktok.com/@ukrmilitary546" target="_blank" rel="noopener noreferrer">TikTok</a>
+    <div class="thanks-list" id="thanksList">
+      <h2 data-key="thanks_title" style="margin-top:40px;">Thanks to</h2>
+    </div>
+
+    <div class="thanks-item">
+      <span>Awota</span>
+      <div class="social-links">
+        <a href="https://www.tiktok.com/@ukrmilitary546" target="_blank" rel="noopener noreferrer">TikTok</a>
+      </div>
+    </div>
+    <div class="thanks-item">
+      <span>Buxankich</span>
+      <div class="social-links">
+        <a href="https://www.tiktok.com/@buxancha" target="_blank" rel="noopener noreferrer">TikTok</a>
+        <a href="https://www.twitch.tv/buxankich" target="_blank" rel="noopener noreferrer">Twitch</a>
+      </div>
     </div>
   </div>
-  <div class="thanks-item">
-    <span>Buxankich</span>
-    <div class="social-links">
-      <a href="https://www.tiktok.com/@buxancha" target="_blank" rel="noopener noreferrer">TikTok</a>
-      <a href="https://www.twitch.tv/buxankich" target="_blank" rel="noopener noreferrer">Twitch</a>
+
+  <footer style="margin-top: 50px; padding: 30px; background: rgba(0,0,0,0.6); color: white; text-align: center;">
+    <h2 style="margin-bottom: 10px;" data-key="my_socials">Мои соцсети</h2>
+    <div class="thanks-item" style="flex-wrap: wrap; justify-content: center; gap: 20px;">
+      <a href="https://www.tiktok.com/@puk_srak" target="_blank" rel="noopener noreferrer" class="social-links">TikTok</a>
+      <a href="https://www.youtube.com/@4culya" target="_blank" rel="noopener noreferrer" class="social-links">YouTube</a>
     </div>
-  </div>
-</div>
 
-</div>
-
-<footer style="margin-top: 50px; padding: 30px; background: rgba(0,0,0,0.6); color: white; text-align: center;">
-  <h2 style="margin-bottom: 10px;" data-key="my_socials">Мои соцсети</h2>
-  <div class="thanks-item" style="flex-wrap: wrap; justify-content: center; gap: 20px;">
-    <a href="https://www.tiktok.com/@puk_srak" target="_blank" rel="noopener noreferrer" class="social-links">TikTok</a>
-    <a href="https://www.youtube.com/@4culya" target="_blank" rel="noopener noreferrer" class="social-links">YouTube</a>
-  </div>
-
-  <h2 style="margin: 30px 0 10px 0;" data-key="project_socials">Соцсети Mujik And Musorka</h2>
-  <div class="thanks-item" style="flex-wrap: wrap; justify-content: center; gap: 20px;">
-    <a href="https://www.youtube.com/@MujikAndMusorka_official" target="_blank" rel="noopener noreferrer" class="social-links">YouTube</a>
-  </div>
-</footer>
-
-  <div class="modal" id="versionModal">
-    <div class="modal-content">
-      <a href="files/mujik and musorka ver. alpha_012.rar" data-key="download_v1" target="_blank" rel="noopener noreferrer">Download v1.0</a>
-      <button class="close-modal" id="closeModal">Close</button>
+    <h2 style="margin: 30px 0 10px 0;" data-key="project_socials">Соцсети Mujik And Musorka</h2>
+    <div class="thanks-item" style="flex-wrap: wrap; justify-content: center; gap: 20px;">
+      <a href="https://www.youtube.com/@MujikAndMusorka_official" target="_blank" rel="noopener noreferrer" class="social-links">YouTube</a>
     </div>
-  </div>
+  </footer>
 
   <script>
     window.addEventListener('DOMContentLoaded', () => {
       const langBtn = document.getElementById('langBtn');
       const langMenu = document.getElementById('langMenu');
-      const versionBtn = document.getElementById('versionBtn');
-      const modal = document.getElementById('versionModal');
-      const closeModal = document.getElementById('closeModal');
 
       langBtn.addEventListener('click', () => {
         langMenu.classList.toggle('show');
       });
 
-      versionBtn.addEventListener('click', () => {
-        modal.style.display = 'flex';
-      });
-
-      closeModal.addEventListener('click', () => {
-        modal.style.display = 'none';
-      });
-
       const translations = {
         en: {
           title: "Mujik And Musorka",
-          download_v1: "Download v. alpha_012",
-          download_latest: "Download Latest",
+          download_latest: "Download",
           language: "Language",
           thanks_title: "Thanks to",
-          description: "Mujik And Musorka",
-          choose_version: "Choose Game Version",
-          our_socials: "Our Socials",
-          join_discord: "Join Discord"
+          description: "Mujik And Musorka is a crazy platformer game where you collect trash and buy skins, and more...",
+          my_socials: "My Socials",
+          project_socials: "Mujik And Musorka Socials"
         },
         ua: {
-          title: "Mujik And Musorka",
-          download_v1: "Завантажити v. alpha_012",
-          download_latest: "Завантажити останню версію",
+          title: "Мужик і Мусорка",
+          download_latest: "Завантажити",
           language: "Мова",
           thanks_title: "Подяки",
-          description: "Mujik And Musorka",
-          choose_version: "Вибрати версію гри",
-          our_socials: "Наші соцмережі",
-          join_discord: "Приєднатися"
+          description: "Mujik And Musorka - божевільна платформер-гра там де ви збираєте сміття і купуєте скіни, і не тільки...",
+          my_socials: "Мої соцмережі",
+          project_socials: "Соцмережі Mujik And Musorka"
         },
         ru: {
-          title: "Mujik And Musorka",
-          download_v1: "Скачать v. alpha_012",
-          download_latest: "Скачать последнюю версию",
+          title: "Мужик и Мусорка",
+          download_latest: "Скачать",
           language: "Язык",
           thanks_title: "Благодарности",
-          description: "Mujik And Musorka",
-          choose_version: "Выбрать версию игры",
-          our_socials: "Наши соцсети",
-          join_discord: "Присоединиться"
+          description: "Mujik And Musorka — безумная платформер-игра там где вы собираете мусорки и покупаете скины, и не только...",
+          my_socials: "Мои соцсети",
+          project_socials: "Соцсети Mujik And Musorka"
         },
         by: {
-          title: "Mujik And Musorka",
-          download_v1: "Спампаваць v. alpha_012",
-          download_latest: "Спампаваць апошнюю версію",
+          title: "Мужык і Мусорка",
+          download_latest: "Спампаваць",
           language: "Мова",
           thanks_title: "Падзякі",
-          description: "Mujik And Musorka",
-          choose_version: "Абярыце версію гульні",
-          our_socials: "Нашы сацсеткі",
-          join_discord: "Далучыцца"
+          description: "Mujik And Musorka - вар'яцкая платформер-гульня там дзе вы збіраеце сметнікі і купляеце скіны, і не толькі...",
+          my_socials: "Мае сацсеткі",
+          project_socials: "Сацсеткі Mujik And Musorka"
         }
       };
 
